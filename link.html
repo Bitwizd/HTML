@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Links</title>
+    <style>
+        /* All links default style */
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Only the image link gets a box */
+        .box-link {
+            background-color: #f44336;
+            color: white;
+            padding: 15px 25px;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px; /* optional rounded corners */
+        }
+
+        .box-link:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Normal links without box -->
+    <a href="https://google.com" target="_self">Google</a>
+    <a href="https://google.com" target="_blank">Google</a>
+    <a href="https://google.com" target="_parent">Google</a>
+    <a href="https://google.com" target="_top">Google</a>
+
+    <br><br>
+
+    <!-- Only this link has a box -->
+    <a href="image.html" class="box-link">Image</a>
+
+    <p>To create a link that opens in the user's email program:</p>
+    <a href="mailto:anjaliscosmos@gmail.com">Send email</a>
+
+</body>
+</html>
